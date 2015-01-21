@@ -5,7 +5,14 @@ import (
 )
 
 func mergeSort(mySlice[]int) []int{
-	return mySlice
+	if len(mySlice) <= 1 {
+		return mySlice
+	} else {
+		// mySliceResult := make([]int, 0, 1000)
+		mySliceA := mySlice[:3]
+		// mySliceB := [3:6]
+		return mySliceA
+	}	
 }
 
 func main() {
