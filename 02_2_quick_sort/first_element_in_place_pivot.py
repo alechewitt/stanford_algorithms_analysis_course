@@ -1,3 +1,5 @@
+# This implementation only requires one list. per recursion
+# It is therefore much more efficient use of memory
 count = 0
 
 def quickSort(aList):
