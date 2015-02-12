@@ -1,4 +1,4 @@
-_"""
+"""
 Super inefficent algorithm for calculating the minimum cut of
 a graph. A Graph is represented in the following form:
     [ [1, [2, 3, 4]], [2, [1, 3, 4] ] ]
@@ -68,7 +68,7 @@ def contractionAlgorithm(aGraph):
 testGraph = readInInputFile("testFiles/homeWorkList.txt")
 
 minCuts = []
-for i in range(len(testGraph) ** 3):
+for i in range(len(testGraph) ** 2):
     minCuts.append(contractionAlgorithm(testGraph))
 
 print "\nMinumum Cut = " + str(min(minCuts))
