@@ -68,8 +68,9 @@ def contractionAlgorithm(aGraph):
 testGraph = readInInputFile("testFiles/homeWorkList.txt")
 
 minCuts = []
-for i in range(len(testGraph) ** 10):
-    minCuts.append(contractionAlgorithm(testGraph))
+for i in range(len(testGraph) * 7):
+    result = contractionAlgorithm(testGraph)
+    minCuts.append(result)
 
 print "\nMinumum Cut = " + str(min(minCuts))
 
